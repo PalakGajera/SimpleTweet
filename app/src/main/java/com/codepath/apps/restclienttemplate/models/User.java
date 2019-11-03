@@ -8,7 +8,7 @@ public class User {
     public String name;
     public String screename;
     public String profileImageUrl;
-
+    //parse and get info from jsonobject
     public static User  fromJson(JSONObject jsonObject) throws JSONException {
         User user = new User();
         user.name = jsonObject.getString("name");
